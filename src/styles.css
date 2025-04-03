@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -164,7 +168,7 @@ footer{
 }
 
 #footer-content{
-  padding: 1rem 4rem;
+  padding: 2.5rem 4rem;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -200,6 +204,8 @@ footer{
 
 #footer-content .footer-bottom{
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   width: 100%;
   align-items: center;
   height: auto;
@@ -258,14 +264,14 @@ header{
   flex-direction: column;
   align-items: center;
   height: auto;
-  background-color: var(--primary-black);
+  background-color: var(--primary-gray);
 }
 
 header #header-content{
   width: 100%;
   padding: 1rem 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 120rem;
 }
@@ -327,7 +333,8 @@ main .row-gray{
 #banner{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   max-width: 120rem;
   padding: 1rem 8rem;
   margin-top: 3rem;
@@ -338,6 +345,7 @@ main .row-gray{
   border-radius: 50%;
   width: 20rem;
   height: 20rem;
+  margin-bottom: 2rem;
 }
 
 #banner #text-banner{
@@ -345,6 +353,7 @@ main .row-gray{
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -352,17 +361,18 @@ main .row-gray{
   color: white;
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 0.5rem;
 }
 
 .text-main h4{
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
   color: var(--primary-color);
 } 
 
 .text-main h1{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.15px;
   color: white;
@@ -417,12 +427,14 @@ main .row-gray{
 #contact{
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   max-width: 120rem;
-  padding: 1rem 4rem;
+  padding: 0rem 4rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   align-items: center;
+  gap: 2rem;
 }
 
 #contact .text-contact{
@@ -430,6 +442,7 @@ main .row-gray{
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  text-align: center;
 }
 
 #contact .text-contact h2{
@@ -446,7 +459,160 @@ main .row-gray{
   color: white;
 }
 
+/* From Uiverse.io by omriluz */ 
+.form-container {
+  width: 400px;
+  background: linear-gradient(var(--primary-gray), var(--primary-gray)) padding-box,
+              linear-gradient(145deg, transparent 35%,var(--primary-color), white) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: var(--primary-gray);
+}
+
+
+
+
+
 /* ESTILIZAÇÃO  */
+
+#about{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  gap: 2rem;
+}
+
+#about .text-about{
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+  line-height: 110%;
+  color: white;
+}
+
+#about .about-div{
+  border: 2px solid var(--primary-color);
+  border-radius: 1.5rem;
+  padding: 2rem 3rem;
+  max-width: 42rem;
+}
+
+#about .about-div p{
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
 
 #projects{
   width: 100%;
@@ -465,7 +631,7 @@ main .row-gray{
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .text-title-projects h2{
@@ -488,28 +654,57 @@ main .row-gray{
   margin-top: 2rem;
   gap: 2rem;
   grid-template-columns: repeat(2 , 20rem);
-  grid-template-rows: repeat(1, 20rem);
+  grid-template-rows: repeat(2, 22rem);
 }
 
 
 .project{
   width: 100%;
   height: 100%;
-  padding: 2rem;
-  border-radius: 1rem;
-  background-color: var(--primary-black);
+  box-sizing: border-box;
+  background: var(--primary-gray);
+  border: 1px solid #414141;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
   display: flex;
+  align-items: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
   flex-direction: column;
   gap: 1rem;
 }
 
-.project img{
-  width: 15rem;
-  height: fit-content;
-  border-radius: 1rem;
+.project:hover{
+  border: 1px solid black;
+  transform: scale(1.05);
 }
 
-.project h3{
+.project:active{
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.project img{
+  width: 100%;
+  height: fit-content;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project .text-project{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 1rem;
+  align-items: center;
+  height: 100%;
+  gap: 0.5rem;
+}
+
+.project .text-project h3{
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.15px;
@@ -517,8 +712,9 @@ main .row-gray{
   color: white;
 }
 
-.project p{
+.project .text-project p{
   font-size: 0.825rem;
   font-weight: 400;
   color: white;
+  max-width: 80%;
 }

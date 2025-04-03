@@ -14,12 +14,12 @@
 
   <header>
     <div id="header-content">
-      <a href="index.html"><img src="./src/img/logo-header.svg" alt="davi cunha"></a>
       <div id="links">
         <a href="index.html">HOME</a>
         <a href="#projects">PROJETOS</a>
-        <a href="#experience">SOBRE</a>
-        <a target="_blank" href="mailto:davicunha1983@gmail.com">CONTATO</a>
+        <a href="#about">SOBRE</a>
+        <a href="#experience">EXPERIÊNCIA</a>
+        <a href="#contact">CONTATO</a>
       </div>
     </div>
   </header>
@@ -30,20 +30,65 @@
         <img src="./src/img/davi.jpeg" alt="davi" class="img-banner">
         <div id="text-banner">
           <div class="text-main">
-            <h4>Olá, meu nome é Davi</h4>
+            <h4>Davi Cunha</h4>
             <h1>Web Developer</h1>
-            <p>Sou apaixonado por tecnologia e desenvolvimento web. Transformo ideias em soluções digitais que conectam pessoas e negócios.</p>
           </div>
-          <button type="button" class="btn-github">
-            <a href="https://github.com/DaviCunhaQ" target="_blank">
-              <p>GITHUB</p>
-            </a>
-            <img src="./src/img/github.png" alt="github" class="img-btn-git">
-          </button>
         </div>
       </div>
     </div>
-    <!--
+    <div class="row-gray">
+      <div id="about">
+        <h2 class="text-about">
+          Sobre Mim
+        </h2>
+        <div class="about-div">
+          <p>Olá, meu nome é Davi Cunha, sou apaixonado por tecnologia e desenvolvimento web. Transformo ideias em soluções digitais que conectam pessoas e negócios. Minha jornada começou em 2021 quando me interessei pela primeira vez em programação, iniciando com Python. Depois busquei conhecimento ao ingressar no ensino médio técnico em Desenvolvimento de Sistemas, onde aprendi diversas tecnologias. Também passei por empresas de programação, atuando como DEV Full-Stack, atualmente, estou cursando Análise e Desenvolvimento de Sistemas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row-black">
+      <div id="projects">
+        <div class="title-projects">
+          <div class="text-title-projects">
+            <h2>Projetos Recentes</h2>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <div class="project">
+            <img src="./src/img/poupe.jpeg" alt="banner">
+            <div class="text-project">
+              <h3>Poupe +</h3>
+              <p>Um projeto de gerenciamento de finanças pessoais.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="./src/img/hair.png" alt="banner">
+            <div class="text-project">
+              <h3>E-Commerce</h3>
+              <p>Um sistema de e-commerce padrão, contando com sistema administrativo.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="./src/img/hair.png" alt="banner">
+            <div class="text-project">
+              <h3>E-Commerce</h3>
+              <p>Um sistema de e-commerce padrão, contando com sistema administrativo.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="./src/img/hair.png" alt="banner">
+            <div class="text-project">
+              <h3>E-Commerce</h3>
+              <p>Um sistema de e-commerce padrão, contando com sistema administrativo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="row-gray">
       <div id="experience">
         <div id="areas">
@@ -94,62 +139,36 @@
         </div>
       </div>
     </div>
-    -->
-    <div class="row-gray">
-      <div id="projects">
-        <div class="title-projects">
-          <div class="text-title-projects">
-            <h2>Melhores Projetos</h2>
-            <p>Projetos mais aprovados e bem-sucedidos.</p>
-          </div>
-          <button type="button" class="btn-github">
-            <a href="https://github.com/DaviCunhaQ" target="_blank">
-              Ver mais
-            </a>
-          </button>
-        </div>
-        <div class="projects-grid">
-          <div class="project">
-            <img src="./src/img/poupe.jpeg" alt="banner">
-            <h3>Poupe +</h3>
-            <p>Um projeto de gerenciamento de finanças pessoais.</p>
-          </div>
-
-          <div class="project">
-            <img src="./src/img/hair.png" alt="banner">
-            <h3>E-Commerce</h3>
-            <p>Um sistema de e-commerce padrão que poderia ser utilizado em qualquer tipo de área, contando com sistema administrativo.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+   
+    
     <div class="row-black">
       <div id="contact">
         <div class="text-contact">
-          <h2>Vamos trabalhar juntos no seu próximo projeto!</h2>
-          <p>Entre em contato e vamos criar algo incrível juntos. Meu foco é entregar soluções criativas e funcionais para atender às suas necessidades.</p>
+          <h2>Entre em Contato</h2>
         </div>
-        <button type="button" class="btn-github">
-          <a href="mailto:davicunha1983@gmail.com" target="_blank">
-            Contato
-          </a>
-        </button>
+        <div class="form-container">
+          <form class="form">
+            <div class="form-group">
+              <label for="email">Nome</label>
+              <input required="" name="email" id="email" type="text"/>
+            </div>
+            <div class="form-group">
+              <label for="textarea">Mensagem</label>
+              <textarea required="" cols="50" rows="10" id="textarea" name="textarea"></textarea>
+            </div>
+            <button type="submit" class="form-submit-btn">Enviar</button>
+          </form>
+        </div>
       </div>
     </div>
   </main>
 
   <footer>
     <div id="footer-content">
-      <div class="footer-top">
-        <a href="index.html">HOME</a>
-        <a href="#projects">PROJETOS</a>
-        <a href="#experience">SOBRE</a>
-        <a target="_blank" href="mailto:davicunha1983@gmail.com">CONTATO</a>
-      </div>
       <div class="footer-bottom">
         <div class="social">
           <section class="button-container">
-            <button class="custom-button">
+            <a href="https://www.instagram.com/davicunhaqueiroz/" target="_blank" class="custom-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -165,10 +184,10 @@
                 ></path>
               </svg>
               <span class="tooltip">Instagram</span>
-            </button>
+            </a>
           </section>
           <section class="button-container-in">
-            <button class="custom-button-in">
+            <a href="https://www.linkedin.com/in/davi-cunha-6757b632a/" target="_blank" class="custom-button-in">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1em"
@@ -184,7 +203,7 @@
                 ></path>
               </svg>
               <span class="tooltip-in">Linkedin</span>
-            </button>
+            </a>
           </section>
           <section class="button-container-git">
             <a
