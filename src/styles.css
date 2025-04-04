@@ -530,6 +530,7 @@ main .row-gray{
   letter-spacing: 0.0094rem;
   line-height: 110%;
   color: white;
+  text-align: center;
 }
 
 #contact .text-contact p{
