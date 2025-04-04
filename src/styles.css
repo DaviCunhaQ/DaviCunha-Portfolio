@@ -524,6 +524,12 @@ main .row-gray{
   text-align: center;
 }
 
+@media screen and (max-width: 50rem) {
+  #contact .text-contact{
+    width: 100%;
+  }
+}
+
 #contact .text-contact h2{
   font-size: 2.5rem;
   font-weight: 700;
