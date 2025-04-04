@@ -29,7 +29,7 @@
     </div>
     <div class="row-black">
       <div id="banner">
-        <img src="./src/img/davi.jpeg" alt="davi" class="img-banner">
+        <img src="./src/img/davi.jpg" alt="davi" class="img-banner">
         <div id="text-banner">
           <div class="text-main">
             <h4>Davi Cunha</h4>
@@ -149,15 +149,16 @@
           <h2>Entre em Contato</h2>
         </div>
         <div class="form-container">
-          <form class="form">
+          <form class="form" method="POST" action="https://formsubmit.co/davicunha1983@gmail.com">
             <div class="form-group">
               <label for="email">Email</label>
               <input required name="email" id="email" type="text"/>
             </div>
             <div class="form-group">
               <label for="textarea">Mensagem</label>
-              <textarea required cols="50" rows="10" id="textarea" name="textarea"></textarea>
+              <textarea required cols="50" rows="10" id="textarea" name="message"></textarea>
             </div>
+            <input type="hidden" name="_next" value="https://davicunha-portfolio.vercel.app/obrigado.html">
             <button type="submit" class="form-submit-btn">Enviar</button>
           </form>
         </div>
